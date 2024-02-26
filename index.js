@@ -1,7 +1,7 @@
 function calculateTotal() {
-    var from = document.getElementById("from").value;
-    var to = document.getElementById("to").value;
-    var numPeople = parseInt(document.getElementById("numPeople").value);
+    var from = document.getElementById("firstComboBox").value;
+    var to = document.getElementById("SecondComboBox").value;
+    var numPeople = parseInt(document.getElementById("Numberofpeople").value);
 
     // Prices based on the selected cities
     var prices = {
@@ -26,8 +26,8 @@ function calculateTotal() {
     var key = from + "-" + to;
     if (prices.hasOwnProperty(key)) {
         var totalPrice = prices[key] * numPeople;
-        document.getElementById("totalPrice").innerText = "Total Price for " + numPeople + " people: $" + totalPrice;
+        document.getElementById("totalprice").innerText = "Total Price for " + numPeople + " people: $" + totalPrice;
     } else {
-        document.getElementById("totalPrice").innerText = "Price information not available for the selected route.";
+        document.getElementById("totalprice").innerText = "Price information not available for the selected route.";
     }
 }
