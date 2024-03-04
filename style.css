@@ -1,0 +1,29 @@
+/* Custom CSS for additional styling */
+/* Set minimum height for body */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Align form items to the right */
+.form-right {
+    text-align: right;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/background.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif; /* Change the font family */
+    color: #333; /* Change the default text color */
+}
+   /* Align form items to the right */
+   .form-right {
+    text-align: right;
+}
